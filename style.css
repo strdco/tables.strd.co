@@ -1,0 +1,101 @@
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-color: #8C212B;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 10pt;
+            color: #ffffff;
+            height: 100%;
+            margin: 0px;
+        }
+
+        img.logo {
+            width: 140px;
+            height: 85px;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+
+        div.thediv {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        section#main {
+            flex: 1;
+            padding: 10px;
+        }
+
+        section.toolbar {
+            padding: 10px;
+        }
+
+        input {
+            font-size: 10pt;
+            color: #ffffff;
+            background-color: #ac414b;
+            border-style: solid;
+            border-color: #ffffff;
+            border-width: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+        }
+
+        ::placeholder {
+            color: #ffffff;
+        }
+
+        textarea {
+            font-size: 10pt;
+            font-family: 'Lucida Console', 'Courier New';
+            background-color: #ffffff;
+            padding: 0px;
+            color: #000000;
+            border-style: none;
+            width: 100%;
+            height: 100%;
+            caret-color: #8C212B;
+        }
+
+        textarea::placeholder {
+            color: #808080;
+        }
+
+        textarea#outputarea {
+            display: none;
+        }
+
+        section#outputtoolbar {
+            display: none;
+        }
+
+        ::selection {
+            background: #C6D633; /* WebKit/Blink Browsers */
+            color: #000000;
+        }
+        ::-moz-selection {
+            background: #C6D633; /* Gecko Browsers */
+            color: #000000;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 9pt;
+            padding: 10px;
+        }
+
+        a.footer-link {
+            color: #ffffff;
+        }
+
+        .headertext {
+            padding-left: 20px;
+            padding-right: 50%;
+        }

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="utf-8" http-equiv="encoding"/>
+
+    <!--- Facebook Open Graph properties: --->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="table.strd.co"/>
+    <meta property="og:title" content="Convert tab-delimited data into T-SQL"/>
+    <meta property="og:description" content="A one-step tool to convert your tab-delimited data from Excel or SSMS into a T-SQL command to INSERT it into a database table"/>
+    <meta property="og:image" content="https://table.strd.co/tablestrdco.gif"/>
+
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css"/>
+
+    <script src="./scriptstuff.js"></script>
+
+    <title>table.strd.co: Convert tab-delimited data into T-SQL</title>
+
+</head>
+<body>
+
+<div class="thediv">
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://strd.co/" target="_new"><img title="Structured Concepts AB" src="./logo-white-840x510.png" class="logo"/></a>
+                </td>
+                <td>
+                    <p class="headertext">
+                        This client-side tool translates your tab-delimited data (like
+                        a recordset that you've copied from Excel or Management Studio)
+                        into a T-SQL statement that you can use to INSERT it into a table.
+                        All of this happens in Javascript - none of the data ever leaves your browser.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="main">
+        <textarea id="inputarea" placeholder="
+        Paste your tab-delimited data (with or without headers) in this field."></textarea>
+        <textarea id="outputarea" readonly></textarea>
+    </section>
+
+    <section id="inputtoolbar" class="toolbar">
+        <label><input type="checkbox" id="headers"/> First row has headers</label>
+        <label><input type="checkbox" id="fixnulls" checked/> Fix nulls</label>
+        <label><input type="checkbox" id="pretty" checked/> Pretty</label>
+        <input id="tablename" placeholder="Table name"/>
+
+        <input type="button" id="gobutton" value="Go"/>
+    </section>
+
+    <section id="outputtoolbar" class="toolbar">
+        <input type="button" id="backbutton" value="Back"/>
+    </section>
+
+    <section class="footer">
+        Lovingly made &amp; Copyright &copy; <a class="footer-link" href="https://strd.co/" target="_new">Structured Concepts AB</a>, All rights reserved.<br/>
+        If you liked this little hack, please let others know on social media.
+    </section>
+
+</div>
+
+</body>
+</html>
